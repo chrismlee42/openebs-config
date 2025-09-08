@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: openebs-config
+
+labels:
+  - pairs:
+      app: openebs
+      managedBy: argocd
+      managementCodeGroup: chrismlee42-dev
+      managementCodeProject: openebs-config
+
+namespace: local-path-storage
+
+resources:
+  - namespace.yaml
