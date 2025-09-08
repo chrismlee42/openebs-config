@@ -10,7 +10,7 @@ labels:
       managementCodeGroup: chrismlee42-dev
       managementCodeProject: openebs-config
 
-namespace: local-path-storage
+namespace: openebs
 
 resources:
   - namespace.yaml
